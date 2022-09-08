@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/sign-up.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="wapper">
+      <div class="wapper-heading">
+        <h1>Sign Up</h1>
+      </div>
+      <form onsubmit="signUp()">
+        <div class="input__field">
+          <input id="userName" type="text" placeholder="User Name" required/>
+        </div>
+
+        <div class="input__field">
+          <input id="email" type="text" placeholder="Email" required/>
+        </div>
+        <div class="input__field">
+          <input id="password" type="password" placeholder="Password" required/>
+          <p style="color: red; display: none" id="checkValid">Not valid</p>
+        </div>
+        <div class="input__field">
+          <input id="confirmPassword" type="password" placeholder="Confirm Password" required/>
+        </div>
+        <a href="login.html" class="login-link">Login</a>
+        <button id="btnSignup" class="btn">Sign Up</button>
+      </form>
+    </div>
+    <script src="../asset/js.main.js"></script>
+  </body>
+</html>
